@@ -1,0 +1,91 @@
+.good{
+    background-color: #c2d6d6;
+}
+.menu{
+    list-style: none;
+    margin-top: 2rem;
+}
+.header{
+    width: 8rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.boo{
+    display: flex;
+}
+.menuholder{
+    margin-left: 10rem;
+}
+.sidebysides{
+    float: left;
+    padding: 2px;
+    width: 100px;
+    margin-right: 10px;
+    color: black;
+    font-family: Titillium Web, sans-serif;
+}
+.logo{
+    border: 2px solid black;
+    border-radius: 20px 80px;
+    width: 110px;
+    height: 30px;
+    margin: 2px;
+
+}
+.ktb{
+    background-color: #cccc00;
+    color: black;
+    font-family: Titillium Web, sans-serif;
+}
+.bro{
+    float: left;
+    width: 50%;
+    height: 250px;
+    font-family: Titillium Web, sans-serif;
+}
+.menubar{
+    list-style: none;
+    font-family: Titillium Web, sans-serif;
+}
+.oh{
+    color: red;
+}
+table, th, td{
+    border: 1px solid black;
+}
+.cool{
+    border: 1px solid black;
+}
+.myImg{
+    width: 400px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 20px 30px 30px 20px;
+}
+.nice{
+    color: red;
+    font-family: Lobster, cursive;
+}
+.yeah{
+    border: 2px solid black;
+    color: red;
+    background-color: yellow;
+}
+.hi{
+    color:red;
+}
+.f{
+    font-family: Shantell Sans, cursive;
+}
+.see{
+    float: right;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    margin-right: 10px;
+    border: 5px solid black;
+    border-radius: 100px;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
