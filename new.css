@@ -89,3 +89,8 @@ table, th, td{
 tr:nth-child(even) {
     background-color: #D6EEEE;
 }
+.policy{
+    text-align: justify;
+    width: 96%;
+    margin: auto;
+}
