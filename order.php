@@ -1,10 +1,13 @@
+<?php
+$orderVl = (INT) $_GET['orderVal'];
+?>
 <!DOCTYPE html>
 <html lang=”en”>
 
 <head>
     <title>myorder</title>
     <link rel="stylesheet" href="css/new.css">
-     <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="order.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -24,92 +27,100 @@
     <?php include 'header.php'; ?>
 
     <main>
-        
-<div class="f"><br>
-    <h1 class="yeah">COMPLETE YOUR ORDER</h1>
-</div>
-     
-<div class="container">
 
-    <form action="">
-
-        <div class="row">
-
-            <div class="col">
-
-                <h3 class="title">billing address</h3>
-
-                <div class="inputBox">
-                    <span>full name :</span>
-                    <input type="text" placeholder="john deo">
-                </div>
-                <div class="inputBox">
-                    <span>email :</span>
-                    <input type="email" placeholder="example@example.com">
-                </div>
-                <div class="inputBox">
-                    <span>address :</span>
-                    <input type="text" placeholder="room - street - locality">
-                </div>
-                <div class="inputBox">
-                    <span>city :</span>
-                    <input type="text" placeholder="mumbai">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>state :</span>
-                        <input type="text" placeholder="india">
-                    </div>
-                    <div class="inputBox">
-                        <span>zip code :</span>
-                        <input type="text" placeholder="123 456">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col">
-
-                <h3 class="title">payment</h3>
-
-                <div class="inputBox">
-                    <span>cards accepted :</span>
-                    <img src="images/card_img.png" alt="">
-                </div>
-                <div class="inputBox">
-                    <span>name on card :</span>
-                    <input type="text" placeholder="mr. john deo">
-                </div>
-                <div class="inputBox">
-                    <span>credit card number :</span>
-                    <input type="number" placeholder="1111-2222-3333-4444">
-                </div>
-                <div class="inputBox">
-                    <span>exp month :</span>
-                    <input type="text" placeholder="january">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>exp year :</span>
-                        <input type="number" placeholder="2022">
-                    </div>
-                    <div class="inputBox">
-                        <span>CVV :</span>
-                        <input type="text" placeholder="1234">
-                    </div>
-                </div>
-
-            </div>
-    
+        <div class="f"><br>
+            <h1 class="yeah">COMPLETE YOUR ORDER</h1>
         </div>
 
-        <input type="submit" value="proceed to checkout" class="submit-btn">
+        <div class="container">
 
-    </form>
+            <form action="">
+                <div class="center1">
+                    <p> Your total is : $<?php echo $orderVl; ?>
+                    </p>
+                    <!-- <span>
+                        <input type="text">
+                    </span> -->
+                </div><br><br><br><br>
 
-</div>    
+                <div class="row">
+
+                    <div class="col">
+
+
+                        <h3 class="title">billing address</h3>
+
+                        <div class="inputBox">
+                            <span>full name :</span>
+                            <input type="text" placeholder="john deo">
+                        </div>
+                        <div class="inputBox">
+                            <span>email :</span>
+                            <input type="email" placeholder="example@example.com">
+                        </div>
+                        <div class="inputBox">
+                            <span>address :</span>
+                            <input type="text" placeholder="room - street - locality">
+                        </div>
+                        <div class="inputBox">
+                            <span>city :</span>
+                            <input type="text" placeholder="mumbai">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>state :</span>
+                                <input type="text" placeholder="india">
+                            </div>
+                            <div class="inputBox">
+                                <span>zip code :</span>
+                                <input type="text" placeholder="123 456">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h3 class="title">payment</h3>
+
+                        <div class="inputBox">
+                            <span>cards accepted :</span>
+                            <img src="images/card_img.png" alt="">
+                        </div>
+                        <div class="inputBox">
+                            <span>name on card :</span>
+                            <input type="text" placeholder="mr. john deo">
+                        </div>
+                        <div class="inputBox">
+                            <span>credit card number :</span>
+                            <input type="number" placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="inputBox">
+                            <span>exp month :</span>
+                            <input type="text" placeholder="january">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>exp year :</span>
+                                <input type="number" placeholder="2022">
+                            </div>
+                            <div class="inputBox">
+                                <span>CVV :</span>
+                                <input type="text" placeholder="1234">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <input type="submit" value="proceed to checkout" class="submit-btn">
+
+            </form>
+
+        </div>
 
     </main>
 

@@ -37,94 +37,23 @@
 
                 <div>
                     <h2>Soups in bowls</h2>
-                    <div class="menu">
+                  
 
-                        <div class="food-items">
-                            <img src="images/food9.jpg">
-                            <div class="details">
-                                <div class="details-sub">
-                                    <h5>Smoky Hamburger</h5>
-                                    <h5 class="price"> $8 </h5>
-                                </div>
-                                <p>.</p>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="food-items">
-                            <img src="chicken.jpeg">
-                            <div class="details">
-                                <div class="details-sub">
-                                    <h5>Honey Garlic Chicken</h5>
-                                    <h5 class="price"> $15 </h5>
-                                </div>
-                                <p>.</p>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="food-items">
-                            <img src="soup.jpeg">
-                            <div class="details">
-                                <div class="details-sub">
-                                    <h5>Manchow Soup</h5>
-                                    <h5 class="price"> $8 </h5>
-                                </div>
-                                <p></p>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="food-items">
-                            <img src="Spaghetti.jpeg">
-                            <div class="details">
-                                <div class="details-sub">
-                                    <h5>Basil Pesto Spaghetti</h5>
-                                    <h5 class="price"> $12 </h5>
-                                </div>
-                                <p></p>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="food-items">
-                            <img src="salmon.jpeg">
-                            <div class="details">
-                                <div class="details-sub">
-                                    <h5>Roast Salmon</h5>
-                                    <h5 class="price"> $15 </h5>
-                                </div>
-                                <p></p>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="food-items">
-                            <img src="Sandwich.jpeg">
-                            <div class="details">
-                                <div class="details-sub">
-                                    <h5>BBQ Sandwich</h5>
-                                    <h5 class="price"> $10 </h5>
-                                </div>
-                                <p></p>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h2>Food in packs</h2>
 
 
                         <div>
-                            <h2>Lunch packs</h2>
-                        </div>
-                        <div>
-                            <h2>Ofada sauce</h2>
-                        </div>
+                            <h2>Food in packs</h2>
 
 
-                        <p class="nice">ENJOY OUR TASTY AND DELICIOUS DISHES AT YOUR CONVENIENCE</p>
+                            <div>
+                                <h2>Lunch packs</h2>
+                            </div>
+                            <div>
+                                <h2>Ofada sauce</h2>
+                            </div>
+
+
+                            <p class="nice">ENJOY OUR TASTY AND DELICIOUS DISHES AT YOUR CONVENIENCE</p>
 
     </main>
 

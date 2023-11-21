@@ -30,6 +30,8 @@ function showFoodMenu(newMenuBtn) {
   });
 }
 
+
+// cart code
 const cart = [];
 let total = 0;
 
@@ -38,61 +40,20 @@ function addToCart(name, price) {
   cart.push(item);
   total += price;
 
-  document.getElementById("checkOutBtnHolda").innerHTML =
-    "<a href='order.php?orderVal=" +
-    total +
-    "'><button type='button' class='menu-btn1' id=''>Checkout</button></a>";
-  // Update the cart display
   updateCart();
+  updateCheckoutButton();
 }
 
-function updateCart() {
-  const cartItemsElement = document.getElementById("cart-items");
-  const cartTotalElement = document.getElementById("cart-total");
-
-  // Clear previous items
-  cartItemsElement.innerHTML = "";
-
-  // Display each item in the cart
-  cart.forEach((item) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-    cartItemsElement.appendChild(listItem);
-  });
-  //alert("about to update");
-  // Update the total
-  cartTotalElement.textContent = total.toFixed(2);
-}
-
-// Add event listeners for "Add to Cart" buttons
-document
-  .querySelectorAll(".food-item button.menu-btn1")
-  .forEach((button, index) => {
-    button.addEventListener("click", () => {
-      const foodName = document.querySelectorAll(".food-item h2.food-name")[
-        index
-      ].textContent;
-      const foodPrice = parseFloat(
-        document
-          .querySelectorAll(".food-item h3.food-price")
-          [index].textContent.slice(1)
-      );
-
-      addToCart(foodName, foodPrice);
-    });
-  });
-
-// Delete item function
 function removeFromCart(index) {
   total -= cart[index].price;
   cart.splice(index, 1);
 
   updateCart();
+  updateCheckoutButton();
 }
 
 function updateCart() {
   const cartItemsElement = document.getElementById("cart-items");
-  const cartTotalElement = document.getElementById("cart-total");
 
   // Clear previous items
   cartItemsElement.innerHTML = "";
@@ -113,5 +74,30 @@ function updateCart() {
   });
 
   // Update the total
-  cartTotalElement.textContent = total.toFixed(2);
+  document.getElementById("cart-total").textContent = total.toFixed(2);
 }
+
+function updateCheckoutButton() {
+  document.getElementById("checkOutBtnHolda").innerHTML =
+    "<a href='order.php?orderVal=" +
+    total +
+    "'><button type='button' class='menu-btn1' id=''>Checkout</button></a>";
+}
+
+// Add event listeners for "Add to Cart" buttons
+document
+  .querySelectorAll(".food-item button.menu-btn1")
+  .forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const foodName = document.querySelectorAll(".food-item h2.food-name")[
+        index
+      ].textContent;
+      const foodPrice = parseFloat(
+        document
+          .querySelectorAll(".food-item h3.food-price")
+          [index].textContent.slice(1)
+      );
+
+      addToCart(foodName, foodPrice);
+    });
+  });

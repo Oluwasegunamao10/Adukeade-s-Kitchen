@@ -1,21 +1,14 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-    font-family: Titillium Web, sans-serif;
-    font-family: Shantell Sans, cursive;
-}
 .good {
   margin: 0;
   padding: 0;
   background-color: #138809;
   font-size: 100%;
+  box-sizing: border-box;
+  font-family: Titillium Web, sans-serif;
+  font-family: Shantell Sans, cursive;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-}
+
 .menu {
   list-style: none;
   margin-top: 2rem;
@@ -83,6 +76,10 @@ tr:nth-child(even) {
   height: 250px;
   font-family: Titillium Web, sans-serif;
 }
+.footer {
+  position: fixed;
+  bottom: 0;
+}
 .menubar {
   list-style: none;
   font-family: Titillium Web, sans-serif;
@@ -94,7 +91,6 @@ table,
 th,
 td {
   border: 1px solid black;
-
 }
 .cool {
   border: 1px solid black;
