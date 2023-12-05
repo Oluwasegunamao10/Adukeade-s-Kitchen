@@ -4,19 +4,17 @@
   background-color: #138809;
   font-size: 100%;
   box-sizing: border-box;
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
   font-family: Titillium Web, sans-serif;
   font-family: Shantell Sans, cursive;
 }
-
-
-.menu {
-  list-style: none;
-  margin-top: 2rem;
-}
-
-.boo {
-  display: flex;
+header {
   position: sticky;
+  top: 0;
+}
+.boo {
   top: 0;
   right: 0;
   border: 1px solid;
@@ -24,8 +22,12 @@
   width: 100%;
 }
 .menuholder {
-  margin-left: 10rem;
+  margin-left: -5rem;
   padding-bottom: 5px;
+}
+.menu {
+  list-style: none;
+  margin-top: 2rem;
 }
 .sidebysides {
   display: inline;
@@ -43,6 +45,11 @@
   width: 150px;
   height: 50px;
   margin: 2px;
+}
+main {
+  flex: 1; 
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 table,
 th,
@@ -77,6 +84,7 @@ tr:nth-child(even) {
   font-family: Titillium Web, sans-serif;
 }
 .footer {
+  margin-top: auto; 
   position: fixed;
   bottom: 0;
 }
@@ -96,17 +104,46 @@ td {
   border: 1px solid black;
   display: flex;
 }
-.myImg {
-  width: 400px;
-  height: auto;
-  border: 5px solid black;
-  border-radius: 20px 30px 30px 20px;
+.content {
+  float: left;
+  top: 27vh;
+  left: 10%;
+  width: 100%;
 }
-.nice {
+
+.content p {
+  font-size: 1.875em;
   color: #ffdf00;
   font-family: Lobster, cursive;
-  font-size: 1.875em;
 }
+
+.myImg {
+  float: right;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  animation: 1s animate ease-in-out;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+button {
+  margin-top: 20px;
+  background: #dfa167;
+  border: none;
+  outline: none;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
 .yeah {
   border: 2px solid black;
   border-radius: 20px 20px 30px 30px;

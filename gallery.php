@@ -4,7 +4,7 @@
 <head>
     <title>mymenu</title>
     <link rel="stylesheet" href="css/new.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="gallery.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -32,60 +32,101 @@
 
             <div>
                 <h2>Outdoor catering</h2>
-
-
+                <div class="gallery">
+                    <a target="_blank">
+                        <img src="images/food50.jpg" alt="food50">
+                    </a>
+                    <div class="description"></div>
+                </div>
+                <div class="gallery">
+                    <a target="_blank">
+                        <img src="images/food51.jpg" alt="food51">
+                    </a>
+                    <div class="description"></div>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" >
+                        <img src="images/food52.jpg" alt="food52">
+                    </a>
+                    <div class="description"></div>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" >
+                        <img src="images/food43.jpg" alt="food43">
+                    </a>
+                    <div class="description"></div>
+                </div>
 
                 <div>
                     <h2>Soups in bowls</h2>
-                  
 
+                    <div class="gallery">
+                        <a target="_blank">
+                            <img src="images/food5.jpg" alt="food5">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" >
+                            <img src="images/food7.jpg" alt="food7">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" >
+                            <img src="images/food10.jpg" alt="food10">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" >
+                            <img src="images/food34.jpg" alt="food34">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" >
+                            <img src="images/food36.jpg" alt="food36">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+
+
+                    <div>
+                        <h2>Food in packs</h2>
 
 
                         <div>
-                            <h2>Food in packs</h2>
+                            <h2>Lunch packs</h2>
+                        </div>
+                        <div>
+                            <h2>Desserts</h2>
+                             <div class="gallery">
+                        <a target="_blank" >
+                            <img src="images/food26.jpg" alt="food26">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                     <div class="gallery">
+                        <a target="_blank" >
+                            <img src="images/food27.jpg" alt="food27">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                     <div class="gallery">
+                        <a target="_blank" >
+                            <img src="images/food32.jpg" alt="food32">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                        </div>
 
 
-                            <div>
-                                <h2>Lunch packs</h2>
-                            </div>
-                            <div>
-                                <h2>Ofada sauce</h2>
-                            </div>
-
-
-                            <p class="nice">ENJOY OUR TASTY AND DELICIOUS DISHES AT YOUR CONVENIENCE</p>
+                        <p class="nice">ENJOY OUR TASTY AND DELICIOUS DISHES AT YOUR CONVENIENCE</p>
 
     </main>
 
-    <footer>
-        <div class="container-fluid">
-            <div class=" row ktb">
-                <div class="col-sm-6 ktb bro">
-                    <ul class="menubar">
-                        <li><a class="none" href="about.php">About us</a></li>
-                        <li><a class="none" href="policy.php">privacy policy</a></li>
-                        <li><a class="none" href="account.php">Account</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6  ktb bro">
-                    <h3>Contact us</h3>
-                    <p>Call: 08038455244.</p>
-                    <p><a class="none" href="https://wa.me/08027049019">
-                            <img src="logos/whatsapp.png" class="my" width="30" height="30" alt="whatsapp" /> <span
-                                class="whatsapp">08027049019</span> </a></p>
-                    <p><a class="none" href="https://instagram.com/adukeades?igshid=YmMyTA2M2Y=">
-                            <img src="logos/ig.jpg" class="my" width="30" height="30" alt="ig" /><span
-                                class="instagram">@queenadukeade1</span></a></p>
-                    <p><a class="none" href="mailto:Adukeadeskitchen@gmail.com" target="_blank">
-                            <img src="logos/gmail.png" class="my" width="30" height="30" alt="ig" /><span
-                                class="gmail">Adukeadeskitchen@gmail.com</span></a></p>
-                </div>
-                <footer>
-                    <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
-                </footer>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

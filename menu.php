@@ -39,10 +39,10 @@
                </div>
             </div><!--------end of col-md-3------->
             <div class="col-md-9">
-               <section class="menu">
+               <section class="menu1">
                   <div class="menu-container">
                      <div class="menu-head">
-                        <h2>Special Food Menu</h2>
+                        <h2 class="color">Special Food Menu</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium porro tempora
                            aliquid
                            officiis voluptate necessitatibus minus obcaecati. Quod perferendis numquam dignissimos odio
@@ -66,13 +66,13 @@
                               <h2 class="food-name">Banana Bread With Butter & Milk</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$25.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -88,13 +88,13 @@
                               <h2 class="food-name">Barbecue</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$20.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -110,13 +110,13 @@
                               <h2 class="food-name">Barbecued Roasted Duck Ramen</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$35.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -132,13 +132,13 @@
                               <h2 class="food-name">Bread With Seeds & Butter</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$27.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -155,13 +155,13 @@
                               <h2 class="food-name">Breadfast Sandwich</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$15.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -177,13 +177,13 @@
                               <h2 class="food-name">Brunch Skillet</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$10.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>New Arrivals</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -199,13 +199,13 @@
                               <h2 class="food-name">Chicken Breast Steaks</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$15.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -221,13 +221,13 @@
                               <h2 class="food-name">Chicken Legs</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$29.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -243,13 +243,13 @@
                               <h2 class="food-name">Eggplant Cannelloni</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$35.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -265,13 +265,13 @@
                               <h2 class="food-name">French Fries</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$9.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -287,13 +287,13 @@
                               <h2 class="food-name">Fried Rice</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$5.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -309,13 +309,13 @@
                               <h2 class="food-name">King Prawns</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$11.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -331,13 +331,13 @@
                               <h2 class="food-name">Noodles</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$5.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -353,13 +353,13 @@
                               <h2 class="food-name">Cheese Pizza</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$12.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -375,13 +375,13 @@
                               <h2 class="food-name">Juicy beef burger</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$14.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -397,13 +397,13 @@
                               <h2 class="food-name">Tacos with pulled pork</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$22.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -419,13 +419,13 @@
                               <h2 class="food-name">tiny pickles</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$7.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -441,13 +441,13 @@
                               <h2 class="food-name">tortilla chips</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$26.00</h3>
-                              <ul class="rating">
+                              <!-- <ul class="rating">
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="fas fa-star"></i></li>
                                  <li><i class="far fa-star"></i></li>
-                              </ul>
+                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -473,35 +473,7 @@
    </main>
 
 
-   <footer>
-      <div class="container-fluid">
-         <div class="row ktb">
-            <div class="col-sm-6 ktb bro">
-               <ul class="menubar">
-                  <li><a class="none" href="about.php">About us</a></li>
-                  <li><a class="none" href="policy.php">privacy policy</a></li>
-                  <li><a class="none" href="account.php">Account</a></li>
-               </ul>
-            </div>
-            <div class="col-sm-6 ktb bro">
-               <h3>Contact us</h3>
-               <p>Call: 08038455244.</p>
-               <p><a class="none" href="https://wa.me/08027049019">
-                     <img src="logos/whatsapp.png" class="my" width="30" height="30" alt="whatsapp" /> <span
-                        class="whatsapp">08027049019</span></a></p>
-               <p><a class="none" href="https://instagram.com/adukeades?igshid=YmMyTA2M2Y=">
-                     <img src="logos/ig.jpg" class="my" width="30" height="30" alt="ig" /><span
-                        class="instagram">@queenadukeade1</span></a></p>
-               <p><a class="none" href="mailto:Adukeadeskitchen@gmail.com" target="_blank">
-                     <img src="logos/gmail.png" class="my" width="30" height="30" alt="ig" /><span
-                        class="gmail">Adukeadeskitchen@gmail.com</span></a></p>
-            </div>
-
-            <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
-
-         </div>
-      </div>
-   </footer>
+     <?php include 'footer.php'; ?>
    <script src="menu.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

@@ -30,7 +30,6 @@ function showFoodMenu(newMenuBtn) {
   });
 }
 
-
 // cart code
 const cart = [];
 let total = 0;

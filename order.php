@@ -1,5 +1,7 @@
 <?php
-$orderVl = (INT) $_GET['orderVal'];
+if (isset($_GET['orderVal'])) {
+    $orderVl = (INT) $_GET['orderVal'];
+}
 ?>
 <!DOCTYPE html>
 <html lang=”en”>
@@ -12,7 +14,6 @@ $orderVl = (INT) $_GET['orderVal'];
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
     <link rel="icon" type="image/x-icon" href="./images/food2.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,14 +35,11 @@ $orderVl = (INT) $_GET['orderVal'];
 
         <div class="container">
 
-            <form action="">
-                <div class="center1">
-                    <p> Your total is : $<?php echo $orderVl; ?>
-                    </p>
-                    <!-- <span>
-                        <input type="text">
-                    </span> -->
-                </div><br><br><br><br>
+            <form action="./process_order.php" method="POST">
+                <p>
+                    You are about to pay:
+                    <?php echo $orderVl; ?>
+                </p>
 
                 <div class="row">
 
@@ -52,29 +50,31 @@ $orderVl = (INT) $_GET['orderVal'];
 
                         <div class="inputBox">
                             <span>full name :</span>
-                            <input type="text" placeholder="john deo">
+                            <input name="fullname" type="text" placeholder="john deo" class="form-control" required>
                         </div>
                         <div class="inputBox">
                             <span>email :</span>
-                            <input type="email" placeholder="example@example.com">
+                            <input name="email" type="email" placeholder="example@example.com" class="form-control"
+                                required>
                         </div>
                         <div class="inputBox">
                             <span>address :</span>
-                            <input type="text" placeholder="room - street - locality">
+                            <input name="address" type="text" placeholder="room - street - locality"
+                                class="form-control" required>
                         </div>
                         <div class="inputBox">
                             <span>city :</span>
-                            <input type="text" placeholder="mumbai">
+                            <input name="city" type="text" placeholder="mumbai" class="form-control" required>
                         </div>
 
                         <div class="flex">
                             <div class="inputBox">
                                 <span>state :</span>
-                                <input type="text" placeholder="india">
+                                <input name="state" type="text" placeholder="india" class="form-control" required>
                             </div>
                             <div class="inputBox">
                                 <span>zip code :</span>
-                                <input type="text" placeholder="123 456">
+                                <input name="zipcode" type="text" placeholder="123 456" class="form-control" required>
                             </div>
                         </div>
 
@@ -90,33 +90,38 @@ $orderVl = (INT) $_GET['orderVal'];
                         </div>
                         <div class="inputBox">
                             <span>name on card :</span>
-                            <input type="text" placeholder="mr. john deo">
+                            <input name="Cardname" type="text" placeholder="mr. john deo" class="form-control" required>
                         </div>
                         <div class="inputBox">
                             <span>credit card number :</span>
-                            <input type="number" placeholder="1111-2222-3333-4444">
+                            <input name="number" type="number" placeholder="1111-2222-3333-4444" class="form-control"
+                                required>
                         </div>
                         <div class="inputBox">
                             <span>exp month :</span>
-                            <input type="text" placeholder="january">
+                            <input name="name_1" type="text" placeholder="january" class="form-control" required>
                         </div>
 
                         <div class="flex">
                             <div class="inputBox">
                                 <span>exp year :</span>
-                                <input type="number" placeholder="2022">
+                                <input name="number_1" type="number" placeholder="2022" class="form-control" required>
                             </div>
                             <div class="inputBox">
                                 <span>CVV :</span>
-                                <input type="text" placeholder="1234">
+                                <input name="number_2" type="number" placeholder="1234" class="form-control" required>
                             </div>
                         </div>
 
                     </div>
 
                 </div>
+                <p>Order Amount:</p>
+                <div class="center1">
+                    <input type="text" value="  $<?php echo $orderVl; ?>" readonly>
 
-                <input type="submit" value="proceed to checkout" class="submit-btn">
+                </div>
+                <input type="submit" value="Pay $<?php echo $orderVl; ?>" class="submit-btn">
 
             </form>
 
@@ -124,35 +129,10 @@ $orderVl = (INT) $_GET['orderVal'];
 
     </main>
 
-    <footer>
-        <div class="container-fluid">
-            <div class="row ktb">
-                <div class="col-sm-6 ktb bro">
-                    <ul class="menubar">
-                        <li><a class="none" href="about.php">About us</a></li>
-                        <li><a class="none" href="policy.php">privacy policy</a></li>
-                        <li><a class="none" href="account.php">Account</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 ktb bro">
-                    <h3>Contact us</h3>
-                    <p>Call: 08038455244.</p>
-                    <p><a class="none" href="https://wa.me/08027049019">
-                            <img src="logos/whatsapp.png" class="my" width="30" height="30" alt="whatsapp" /> <span
-                                class="whatsapp">08027049019</span></a></p>
-                    <p><a class="none" href="https://instagram.com/adukeades?igshid=YmMyTA2M2Y=">
-                            <img src="logos/ig.jpg" class="my" width="30" height="30" alt="ig" /><span
-                                class="instagram">@queenadukeade1</span></a></p>
-                    <p><a class="none" href="mailto:Adukeadeskitchen@gmail.com" target="_blank">
-                            <img src="logos/gmail.png" class="my" width="30" height="30" alt="ig" /><span
-                                class="gmail">Adukeadeskitchen@gmail.com</span></a></p>
-                </div>
 
-                <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
 
-            </div>
-        </div>
-    </footer>
+
+    <?php include 'footer.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
