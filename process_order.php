@@ -1,5 +1,5 @@
 <?php
-
+include "classes/DBConnect.php";
 function test_input($data)
 {
     $data = trim($data);
@@ -115,7 +115,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Month: ' . $_POST["name_1"] . "<br>";
         echo 'Year: ' . $_POST["number_1"] . "<br>";
         echo 'Cvv: ' . $_POST["number_2"] . "<br>";
-        echo "Processing";
+        echo "Processing" . "<br>";
+        DBConnect::dbConnectt();
         exit;
     } else {
         echo $fullnameErr . "<br>";

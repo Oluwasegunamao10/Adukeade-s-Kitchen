@@ -1,5 +1,5 @@
 <?php
-
+include "classes/DBConnect.php";
 function test_input($data)
 {
     $data = trim($data);
@@ -32,7 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($usernameErr == "" && $passwordErr == "") {
         echo 'Username: ' . $_POST["username"] . "<br>";
         echo 'Password: ' . $_POST["password"] . "<br>";
-        echo "Processing";
+        echo "Processing" . "<br>";
+        DBConnect::dbConnectt();
         exit;
     } else {
         echo $usernameErr . "<br>";
