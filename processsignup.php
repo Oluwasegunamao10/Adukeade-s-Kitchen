@@ -1,5 +1,7 @@
 <?php
+session_start();
 include "classes/DBConnect.php";
+include "classes/Users.php";
 function test_input($data)
 {
     $data = trim($data);
@@ -9,7 +11,6 @@ function test_input($data)
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     $usernameErr = $emailErr = $passwordErr = $password2Err = "";
 
 
@@ -30,30 +31,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $emailErr = "Invalid email format";
         }
     }
-    if (empty($_POST["password"])) {
-        $passwordErr = "Enter password";
-    } else {
-        $password = test_input($_POST["password"]);
-        if (!preg_match('/^\d+$/', $password)) {
-            $passwordErr = "Only numbers are allowed ";
-        }
-    }
+    $password = test_input($_POST["password"]);
     if (empty($_POST["password2"])) {
         $password2Err = "Confirm your password";
     } else {
         $password2 = test_input($_POST["password2"]);
-        if (!preg_match('/^\d+$/', $password2)) {
-            $password2Err = "Password does not match";
+        if ($password !== $password2) {
+            $password2Err = "Passwords do not match";
         }
+    }
+    if (empty($_POST["password"])) {
+        $passwordErr = "Enter password";
+    } else {
+        if (!preg_match('/^\d+$/', $password)) {
+            $passwordErr = "Only numbers are allowed ";
+        }
+        $password = hash('sha256', $password);
     }
 
     if ($usernameErr == "" && $emailErr == "" && $passwordErr == "" && $password2Err == "") {
-        echo 'Username: ' . $_POST["username"] . "<br>";
-        echo 'Email: ' . $_POST["email"] . "<br>";
-        echo 'Password: ' . $_POST["password"] . "<br>";
-        echo 'Password2: ' . $_POST["password2"] . "<br>";
-        echo "Processing" . "<br>";
-        DBConnect::dbConnectt();
+        // echo 'Username: ' . $_POST["username"] . "<br>";
+        // echo 'Email: ' . $_POST["email"] . "<br>";
+        // echo 'Password: ' . $_POST["password"] . "<br>";
+        // echo 'Password2: ' . $_POST["password2"] . "<br>";
+        // echo "Processing" . "<br>";
+        // DBConnect::dbConnectt();
+        // exit;
+        $user = new Users;
+        $user->saveUsers($username, $email, $password);
+        // echo "Data is inserted into DB"."</br>";
+        // exit;
+        header("Location: http://localhost/Adukeade/?msp=Congrats, you are successfully registered on the platform");
         exit;
     } else {
         echo $usernameErr . "<br>";

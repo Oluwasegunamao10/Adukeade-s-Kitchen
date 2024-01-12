@@ -1,0 +1,29 @@
+.yeah{
+    margin: -20px;
+}
+.order-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-item {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .order-item:last-child {
+            border-bottom: none;
+        }
+        .order-item h2 {
+            margin: 20px;
+            color: #333;
+        }
+
+        .order-item p {
+            margin: 5px 0;
+            color: #777;
+        }

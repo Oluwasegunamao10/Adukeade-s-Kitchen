@@ -94,22 +94,22 @@ if (isset($_GET['orderVal'])) {
                         </div>
                         <div class="inputBox">
                             <span>credit card number :</span>
-                            <input name="number" type="number" placeholder="1111-2222-3333-4444" class="form-control"
-                                required>
+                            <input name="card_number" type="number" placeholder="1111-2222-3333-4444"
+                                class="form-control" required>
                         </div>
                         <div class="inputBox">
                             <span>exp month :</span>
-                            <input name="name_1" type="text" placeholder="january" class="form-control" required>
+                            <input name="exp_month" type="text" placeholder="january" class="form-control" required>
                         </div>
 
                         <div class="flex">
                             <div class="inputBox">
                                 <span>exp year :</span>
-                                <input name="number_1" type="number" placeholder="2022" class="form-control" required>
+                                <input name="exp_year" type="number" placeholder="2022" class="form-control" required>
                             </div>
                             <div class="inputBox">
                                 <span>CVV :</span>
-                                <input name="number_2" type="number" placeholder="1234" class="form-control" required>
+                                <input name="CVV" type="number" placeholder="1234" class="form-control" required>
                             </div>
                         </div>
 

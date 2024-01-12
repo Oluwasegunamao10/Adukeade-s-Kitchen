@@ -13,6 +13,12 @@
 </head>
 
 <body class="good">
+
+  <?php
+  $message = isset($_GET['msp']) ? $_GET['msp'] : '';
+  echo $message;
+  ?>
+
   <div class="center">
     <form class="form" id="form" action="./processlogin.php" method="POST">
       <h1>Log in</h1><br>

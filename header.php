@@ -1,5 +1,5 @@
 <header>
-   
+
 
     <nav class="navbar navbar-expand-lg boo">
         <div class="header1"><a href="index.php"><img src="images/logo.jpg" class="logo" alt="logo" title= /></a>
@@ -21,7 +21,12 @@
                 <li class=" nav-item sidebysides"><a class="nav-link none" href="about.php">About us</a></li>
                 <li class="nav-item sidebysides"><a class="nav-link none" href="promo.php">Promo</a></li>
                 <li class="nav-item sidebysides"><a class="nav-link none" href="delivery.php">Delivery</a></li>
-
+                <?php if (isset($_SESSION['username'])) {
+                    ?>
+                    <li class="nav-item sidebysides"><a class="nav-link none" href="vieworders.php">view orders</a></li>
+                    <li class="nav-item sidebysides"><a class="nav-link none" href="logout.php">logout</a></li>
+                    <?php
+                } ?>
 
             </ul>
 

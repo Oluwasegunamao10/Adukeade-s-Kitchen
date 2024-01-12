@@ -1,5 +1,7 @@
 <?php
+session_start();
 include "classes/DBConnect.php";
+include "classes/Users.php";
 function test_input($data)
 {
     $data = trim($data);
@@ -33,8 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Username: ' . $_POST["username"] . "<br>";
         echo 'Password: ' . $_POST["password"] . "<br>";
         echo "Processing" . "<br>";
-        DBConnect::dbConnectt();
-        exit;
+        // DBConnect::dbConnectt();
+        // exit;
+        $user = new Users;
+        $user->loginUser($username, $password);
+        // echo "Data is inserted into DB"."</br>";
+        // exit;
     } else {
         echo $usernameErr . "<br>";
         echo $passwordErr . "<br>";

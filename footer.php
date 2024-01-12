@@ -23,7 +23,7 @@
 
             <div class="row">
                 <div class="col">
-                    <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+                    <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
                 </div>
             </div>
         </div>
