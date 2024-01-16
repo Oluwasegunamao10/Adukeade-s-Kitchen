@@ -23,7 +23,7 @@ session_start();
 
 <body class="good">
     <?php include 'header.php'; ?>
-
+  
     <?php
     $message = isset($_GET['msp']) ? $_GET['msp'] : '';
     $message = htmlentities($message, ENT_QUOTES, "UTF-8");
@@ -40,7 +40,7 @@ session_start();
                                 <p>GOOD FOOD IS YOUR ESSENTIAL COMPANION TO EATING OUT, EATING IN AND EVERYTHING IN
                                     BETWEEN.
                                     @ADUKEADE'S KITCHEN... ONE TASTE YOU CANT RESIST.</p>
-                                <button>ORDER NOW</button>
+                                <button><a href="menu.php">ORDER NOW</a></button>
                             </div>
                         </div>
                         <div class="col-lg-6 ">

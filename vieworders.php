@@ -1,5 +1,14 @@
 <?php
 session_start();
+ob_start();
+//include "classes/DBConnect.php";
+require_once('classes/DBConnect.php');
+//include_once('classes/DBConnect.php');
+//include "classes/Orders.php";
+require_once('classes/Orders.php');
+// include_once('classes/Orders.php');
+$order = new Orders();
+$allOrders = $order->getAllOrders();
 ?>
 
 <!DOCTYPE html>
@@ -35,21 +44,47 @@ session_start();
 
     <main>
         <h1 class="yeah">Restaurant Orders</h1>
-        <ul class="order-list">
-            <li class="order-item">
-                <h2>Order #1</h2>
-                <p><strong>Full Name:</strong> <input type="text" value="" readonly></p>
-                <p><strong>Meal Ordered:</strong> <input type="text" value=" " readonly></p>
-                <p><strong>Address:</strong> <input type="text" value=" " readonly></p>
-                <p><strong>Email:</strong> <input type="text" value="  " readonly></p>
-                <p><strong>Date:</strong> <input type="text" value="  " readonly></p>
-            </li>
+        <div class="order-list">
+            <div class="order-item">
+                <?php foreach($allOrders as $key => $order){
+                    $no = $key+1;
+                    ?>
+                <h2>Order <?=$no?></h2>
+                <?php
+                    $fullName = htmlentities($order['fullname'], ENT_QUOTES, "UTF-8");
+                    ?>
+                <div><span class="fatSpan">Full Name:</span> <span><?=$fullName ?></span></div>
+                <?php
+                    $mealOrdered = htmlentities($order['meal_ordered'], ENT_QUOTES, "UTF-8");
+                    ?>
+                <div><span class="fatSpan">Meal Ordered:</span>  <span><?=$mealOrdered ?></span></div>
+                <?php
+                    $address = htmlentities($order['cus_address'], ENT_QUOTES, "UTF-8");
+                    ?>
+                <div><span class="fatSpan">Address:</span> <span><?=$address?></span></div>
+                <?php
+                    $email = htmlentities($order['email'], ENT_QUOTES, "UTF-8");
+                    ?>
+                <div><span class="fatSpan">Email:</span> <span><?=$email?></span></div>
+                <?php
+                    $orderDt = htmlentities($order['order_date'], ENT_QUOTES, "UTF-8");
+                    ?>
+                <div><span class="fatSpan">Date:</span> <span><?=$orderDt ?></span></div>
+                <?php
+                } ?>
+                <!-- <h2>Order #1</h2>
+                <div><span class="fatSpan">Full Name:</span> <input type="text" value="" readonly></div>
+                <div><span class="fatSpan">Meal Ordered:</span> <input type="text" value=" " readonly></div>
+                <div><span class="fatSpan">Address:</span> <input type="text" value=" " readonly></div>
+                <div><span class="fatSpan">Email:</span> <input type="text" value="  " readonly></div>
+                <div><span class="fatSpan">Date:</span> <input type="text" value="  " readonly></div> -->
+            </div>
 
-          
+
 
             <!-- Add more order items as needed -->
 
-        </ul>
+        </div>
     </main>
 
 

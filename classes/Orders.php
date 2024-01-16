@@ -1,7 +1,4 @@
 <?php
-include "classes/Log_Errors.php";
-include "classes/DBConnect.php";
-include "classes/Orders.php";
 
 class Orders {
 
