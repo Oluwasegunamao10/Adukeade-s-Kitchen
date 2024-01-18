@@ -1,3 +1,5 @@
+// script for adding to cart and calculating total items and displaying the total on the order page
+
 const menuBtns = document.querySelectorAll(".menu-btn");
 const foodItems = document.querySelectorAll(".food-item");
 
@@ -100,3 +102,40 @@ document
       addToCart(foodName, foodPrice);
     });
   });
+
+
+// script to make the food image display on full screen when clicked on 
+ document.addEventListener("DOMContentLoaded", function () {
+   var images = document.querySelectorAll(".food-img img");
+
+   images.forEach(function (image, index) {
+     image.addEventListener("click", function () {
+       openModal(index);
+     });
+   });
+
+   function openModal(index) {
+     var modal = document.getElementById("myModal");
+     var modalImg = document.getElementById("modalImg");
+     modalImg.src = images[index].src;
+     modal.style.display = "block";
+   }
+
+   function closeModal() {
+     var modal = document.getElementById("myModal");
+     modal.style.display = "none";
+   }
+
+   window.onclick = function (event) {
+     var modal = document.getElementById("myModal");
+     if (event.target == modal) {
+       closeModal();
+     }
+   };
+
+   // Close modal when the close button in the modal is clicked
+   var closeButton = document.querySelector(".close");
+   if (closeButton) {
+     closeButton.addEventListener("click", closeModal);
+   }
+ });

@@ -23,10 +23,10 @@ class Users
             $q = $this->conn->prepare($sql);
             //execute query
             $q->execute(array(':Username' => $username, ':email' => $email, ':passwordd' => $password));
-            echo "Insertion sucessfully done "."<br>";
+            echo "Insertion sucessfully done " . "<br>";
         } catch (PDOexception $e) {
-          echo $e->getMessage() . $e->getCode() . $e->getFile() . $e->getLine();
-          exit;
+            echo $e->getMessage() . $e->getCode() . $e->getFile() . $e->getLine();
+            exit;
             // Log_Errors::Log_DBerror_msg($e->getMessage(), $e->getCode(), $e->getFile(), $e->getLine());
             // exit;
             /*$errorno = 'An error might have occured in the system!';
