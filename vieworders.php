@@ -36,11 +36,7 @@ $allOrders = $order->getAllOrders();
 <body class="good">
     <?php include 'header.php'; ?>
 
-    <?php
-    $message = isset($_GET['msp']) ? $_GET['msp'] : '';
-    $message = htmlentities($message, ENT_QUOTES, "UTF-8");
-    echo $message;
-    ?>
+
 
     <main>
         <h1 class="yeah">Restaurant Orders</h1>
@@ -84,12 +80,6 @@ $allOrders = $order->getAllOrders();
                         </span></div>
                     <?php
                 } ?>
-                <!-- <h2>Order #1</h2>
-                <div><span class="fatSpan">Full Name:</span> <input type="text" value="" readonly></div>
-                <div><span class="fatSpan">Meal Ordered:</span> <input type="text" value=" " readonly></div>
-                <div><span class="fatSpan">Address:</span> <input type="text" value=" " readonly></div>
-                <div><span class="fatSpan">Email:</span> <input type="text" value="  " readonly></div>
-                <div><span class="fatSpan">Date:</span> <input type="text" value="  " readonly></div> -->
             </div>
 
 

@@ -29,7 +29,7 @@
       <div class="container">
          <div class="row">
             <div class="col-md-3">
-            
+
                <div id="cart">
                   <h2>Shopping Cart</h2>
                   <ul id="cart-items"></ul>
@@ -50,7 +50,7 @@
                            nobis
                            asperiores!</p>
 
-                             <p class="color">CLICK ON EACH FOOD IMAGE TO SEE IT IN FULL VIEW</p>
+                        <p class="color">CLICK ON EACH FOOD IMAGE TO SEE IT IN FULL VIEW</p>
                      </div>
 
                      <div class="menu-btns">
@@ -61,7 +61,7 @@
 
                      <div class="food-items">
                         <!-- item -->
-                        
+
                         <div class="food-item featured">
                            <div class="food-img">
                               <img src="images/food23.jpg" alt="food image">
@@ -457,18 +457,18 @@
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
                         </div>
 
-                      
+
                         <!-- end of item -->
                </section>
             </div><!------end of col-md-9------>
          </div><!-------end of row-------->
 
-       <div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImg">
-    </div>
-</div>
+         <div id="myModal" class="modal">
+            <div class="modal-content">
+               <span class="close" onclick="closeModal()">&times;</span>
+               <img id="modalImg">
+            </div>
+         </div>
 
 
 
@@ -486,14 +486,15 @@
    </main>
 
 
-     <?php include 'footer.php'; ?>
-   <script src="menu.js"></script>
+   <?php include 'footer.php'; ?>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="js/jquery-3.6.4.js"></script>
    <script src="js/bootstrap.bundle.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="menu.js">
+   </script>
 </body>
 
 </html>

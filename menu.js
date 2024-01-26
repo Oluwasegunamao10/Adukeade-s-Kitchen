@@ -53,6 +53,16 @@ function removeFromCart(index) {
   updateCheckoutButton();
 }
 
+function addToCart(name, price) {
+  const item = { name, price };
+  cart.push(item);
+  total += price;
+
+  updateCart();
+  updateCheckoutButton();
+}
+
+// Modify the updateCart function to display both name and price
 function updateCart() {
   const cartItemsElement = document.getElementById("cart-items");
 
@@ -62,7 +72,7 @@ function updateCart() {
   // Display each item in the cart with a delete button
   cart.forEach((item, index) => {
     const listItem = document.createElement("li");
-    listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+    listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`; // Display name and price
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
@@ -78,11 +88,18 @@ function updateCart() {
   document.getElementById("cart-total").textContent = total.toFixed(2);
 }
 
+
 function updateCheckoutButton() {
-  document.getElementById("checkOutBtnHolda").innerHTML =
-    "<a href='order.php?orderVal=" +
-    total +
-    "'><button type='button' class='menu-btn1' id=''>Checkout</button></a>";
+  const itemNames = cart.map((item) => item.name); // Extract names from items in cart
+  const checkoutButton = document.getElementById("checkOutBtnHolda");
+
+  if (checkoutButton) {
+    checkoutButton.innerHTML = `<a href='order.php?orderVal=${total}&itemNames=${itemNames.join(
+      ","
+    )}'>
+      <button type='button' class='menu-btn1'>Checkout</button>
+       </a>`;
+  }
 }
 
 // Add event listeners for "Add to Cart" buttons
@@ -103,39 +120,38 @@ document
     });
   });
 
+// script to make the food image display on full screen when clicked on
+document.addEventListener("DOMContentLoaded", function () {
+  var images = document.querySelectorAll(".food-img img");
 
-// script to make the food image display on full screen when clicked on 
- document.addEventListener("DOMContentLoaded", function () {
-   var images = document.querySelectorAll(".food-img img");
+  images.forEach(function (image, index) {
+    image.addEventListener("click", function () {
+      openModal(index);
+    });
+  });
 
-   images.forEach(function (image, index) {
-     image.addEventListener("click", function () {
-       openModal(index);
-     });
-   });
+  function openModal(index) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImg");
+    modalImg.src = images[index].src;
+    modal.style.display = "block";
+  }
 
-   function openModal(index) {
-     var modal = document.getElementById("myModal");
-     var modalImg = document.getElementById("modalImg");
-     modalImg.src = images[index].src;
-     modal.style.display = "block";
-   }
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
 
-   function closeModal() {
-     var modal = document.getElementById("myModal");
-     modal.style.display = "none";
-   }
+  window.onclick = function (event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+      closeModal();
+    }
+  };
 
-   window.onclick = function (event) {
-     var modal = document.getElementById("myModal");
-     if (event.target == modal) {
-       closeModal();
-     }
-   };
-
-   // Close modal when the close button in the modal is clicked
-   var closeButton = document.querySelector(".close");
-   if (closeButton) {
-     closeButton.addEventListener("click", closeModal);
-   }
- });
+  // Close modal when the close button in the modal is clicked
+  var closeButton = document.querySelector(".close");
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
+});

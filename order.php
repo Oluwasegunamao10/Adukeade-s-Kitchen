@@ -3,6 +3,17 @@ if (isset($_GET['orderVal'])) {
     $orderVl = (INT) $_GET['orderVal'];
 }
 ?>
+<?php
+// Check if itemNames is set in the URL parameters
+if (isset($_GET['itemNames'])) {
+    // Retrieve the itemNames from the URL parameters
+    $itemNames = $_GET['itemNames'];
+    echo "Item Names: " . $itemNames; // Debug output
+} else {
+    echo "Item Names not found in URL parameters"; // Debug output
+}
+?>
+
 <!DOCTYPE html>
 <html lang=”en”>
 
@@ -47,11 +58,21 @@ if (isset($_GET['orderVal'])) {
 
 
                         <h3 class="title">billing address</h3>
+                        <div>
+                            <span>Meal Ordered: </span>
+                            <input name="meal_ordered" type="text" value="   <?php
+                            // Display item names 
+                            echo "$itemNames";
+                            ?>" readonly required>
+                        </div>
+
+
 
                         <div class="inputBox">
                             <span>full name :</span>
                             <input name="fullname" type="text" placeholder="john deo" class="form-control" required>
                         </div>
+
                         <div class="inputBox">
                             <span>email :</span>
                             <input name="email" type="email" placeholder="example@example.com" class="form-control"
@@ -129,16 +150,13 @@ if (isset($_GET['orderVal'])) {
 
     </main>
 
-
-
-
-    <?php include 'footer.php'; ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.6.4.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    < <?php include 'footer.php'; ?>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.4.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

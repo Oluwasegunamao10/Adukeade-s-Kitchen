@@ -1,5 +1,5 @@
 <?php
-session_start(); 
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang=”en”>
@@ -23,7 +23,7 @@ session_start();
 
 <body class="good">
     <?php include 'header.php'; ?>
-  
+
     <?php
     $message = isset($_GET['msp']) ? $_GET['msp'] : '';
     $message = htmlentities($message, ENT_QUOTES, "UTF-8");

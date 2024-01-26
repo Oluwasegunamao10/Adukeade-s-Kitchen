@@ -1,27 +1,44 @@
 <?php
 
-class Orders {
+class Orders
+{
 
     //put your code here
     private $conn;
 
-    public function __Construct() {
+    public function __Construct()
+    {
         $this->conn = DBConnect::dbConnectt();
-        echo "Constructor successfully called "."<br>";
+        // echo "Constructor successfully called "."<br>";
     }
-    public function saveOrder($fullname, $email, $address, $city, $state, $zipcode, $Cardname, $card_number, $exp_month, $exp_year, $CVV) {
-        echo "Inside registered user function "."<br>";
+    public function saveOrder($fullname, $email, $address, $city, $state, $zipcode, $Cardname, $card_number, $exp_month, $exp_year, $CVV, $itemNames)
+    {
+        echo "Inside registered user function " . "<br>";
         try {
-            $sql = "INSERT into orders (fullname,email,cus_address,order_date,city,name_on_card,card_number,exp_month,order_state,zipcode, exp_year, CVV) 
-            VALUES (:fullname,:email,:cus_address,NOW(),:city,:name_on_card,:card_number,:exp_month,:order_state,:zipcode,:exp_year,:CVV)";
+            $sql = "INSERT into orders (fullname,email,cus_address,order_date,city,name_on_card,card_number,exp_month,order_state,zipcode, exp_year, CVV, meal_ordered) 
+            VALUES (:fullname,:email,:cus_address,NOW(),:city,:name_on_card,:card_number,:exp_month,:order_state,:zipcode,:exp_year,:CVV, :meal_ordered)";
             //prepare query
             $q = $this->conn->prepare($sql);
             //execute query
-            $q->execute(array(':fullname' => $fullname, ':email' => $email, ':cus_address' => $address, ':city' => $city, ':name_on_card' => $Cardname,
-                ':card_number' => $card_number, ':exp_month' => $exp_month, ':order_state' => $state, ':zipcode' => $zipcode, ':exp_year' => $exp_year, ':CVV' => $CVV));
-            echo "Insertion sucessfully done "."<br>";
+            $q->execute(
+                array(
+                    ':fullname' => $fullname,
+                    ':email' => $email,
+                    ':cus_address' => $address,
+                    ':city' => $city,
+                    ':name_on_card' => $Cardname,
+                    ':card_number' => $card_number,
+                    ':exp_month' => $exp_month,
+                    ':order_state' => $state,
+                    ':zipcode' => $zipcode,
+                    ':exp_year' => $exp_year,
+                    ':CVV' => $CVV,
+                    ':meal_ordered' => $itemNames
+                )
+            );
+            // echo "Insertion sucessfully done "."<br>";
         } catch (PDOexception $e) {
-            echo $e->getMessage().$e->getCode().$e->getFile().$e->getLine();
+            echo $e->getMessage() . $e->getCode() . $e->getFile() . $e->getLine();
             exit;
             // Log_Errors::Log_DBerror_msg($e->getMessage(), $e->getCode(), $e->getFile(), $e->getLine());
             // exit;
@@ -34,6 +51,8 @@ class Orders {
             }*/
         }
     }
+
+
     public function getAllOrders()
     {
         try {
@@ -58,6 +77,5 @@ class Orders {
     }
 
 
-    
 }
 ?>
