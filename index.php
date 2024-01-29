@@ -30,32 +30,44 @@ session_start();
     echo $message;
     ?>
     <main>
-        <div class="f"><br>
-            <h1 class="yeah">WELCOME TO ADUKEADE'S KITCHEN</h1>
-            <div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 ">
-                            <div class="content">
-                                <p>GOOD FOOD IS YOUR ESSENTIAL COMPANION TO EATING OUT, EATING IN AND EVERYTHING IN
-                                    BETWEEN.
-                                    @ADUKEADE'S KITCHEN... ONE TASTE YOU CANT RESIST.</p>
-                                <button><a href="menu.php">ORDER NOW</a></button>
+        <section>
+            <div class="f"><br>
+                <h1 class="yeah">WELCOME TO ADUKEADE'S KITCHEN</h1>
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 ">
+                                <div class="content">
+                                    <p>GOOD FOOD IS YOUR ESSENTIAL COMPANION TO EATING OUT, EATING IN AND EVERYTHING IN
+                                        BETWEEN.
+                                        @ADUKEADE'S KITCHEN... ONE TASTE YOU CANT RESIST.</p>
+                                    <button class="btn1" onclick="redirectToMenu()">ORDER NOW</a></button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 ">
-                            <div>
-                                <img src="images/food.jpg" class="myImg" alt="" />
+                            <div class="col-lg-6">
+                                <div class="image-container">
+                                    <img src="images/food.jpg" class="myImg" alt="" />
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                </div>
+        </section>
+
 
 
     </main>
+    <!-- <section class="center">
 
+
+    </section> -->
     <?php include 'footer.php'; ?>
 
+    <script>
+        function redirectToMenu() {
+            window.location.href = "menu.php"; // Redirects to menu.php
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

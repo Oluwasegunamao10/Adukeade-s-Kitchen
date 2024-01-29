@@ -31,98 +31,113 @@
 
 
             <div>
-                <h2>Outdoor catering</h2>
+                <h2 class="color">Outdoor catering</h2>
                 <div class="gallery">
                     <a target="_blank">
-                        <img src="images/food50.jpg" alt="food50">
+                        <img src="images/food50.jpg" class="myImg" alt="food50">
                     </a>
                     <div class="description"></div>
                 </div>
                 <div class="gallery">
                     <a target="_blank">
-                        <img src="images/food51.jpg" alt="food51">
+                        <img src="images/food51.jpg" class="myImg" alt="food51">
                     </a>
                     <div class="description"></div>
                 </div>
                 <div class="gallery">
-                    <a target="_blank" >
-                        <img src="images/food52.jpg" alt="food52">
+                    <a target="_blank">
+                        <img src="images/food52.jpg" class="myImg" alt="food52">
                     </a>
                     <div class="description"></div>
                 </div>
                 <div class="gallery">
-                    <a target="_blank" >
-                        <img src="images/food43.jpg" alt="food43">
+                    <a target="_blank">
+                        <img src="images/food17.jpg" class="myImg" alt="food43">
                     </a>
                     <div class="description"></div>
-                </div>
+                </div><br><br><br>
 
                 <div>
-                    <h2>Soups in bowls</h2>
+                    <h2 class="color">Soups in bowls</h2>
 
                     <div class="gallery">
                         <a target="_blank">
-                            <img src="images/food5.jpg" alt="food5">
+                            <img src="images/food5.jpg" class="myImg" alt="food5">
                         </a>
                         <div class="description"></div>
                     </div>
                     <div class="gallery">
-                        <a target="_blank" >
-                            <img src="images/food7.jpg" alt="food7">
+                        <a target="_blank">
+                            <img src="images/food7.jpg" class="myImg" alt="food7">
                         </a>
                         <div class="description"></div>
                     </div>
                     <div class="gallery">
-                        <a target="_blank" >
-                            <img src="images/food10.jpg" alt="food10">
+                        <a target="_blank">
+                            <img src="images/food10.jpg" class="myImg" alt="food10">
                         </a>
                         <div class="description"></div>
                     </div>
                     <div class="gallery">
-                        <a target="_blank" >
-                            <img src="images/food34.jpg" alt="food34">
+                        <a target="_blank">
+                            <img src="images/food34.jpg" class="myImg" alt="food34">
                         </a>
                         <div class="description"></div>
                     </div>
                     <div class="gallery">
-                        <a target="_blank" >
-                            <img src="images/food36.jpg" alt="food36">
+                        <a target="_blank">
+                            <img src="images/food36.jpg" class="myImg" alt="food36">
+                        </a>
+                        <div class="description"></div>
+                    </div><br><br><br>
+
+                    <h2 class="color">Proteins</h2>
+                    <div class="gallery">
+                        <a target="_blank">
+                            <img src="images/food61.jpg" class="myImg" alt="food26">
                         </a>
                         <div class="description"></div>
                     </div>
-
-
-                    <div>
-                        <h2>Food in packs</h2>
-
-
-                        <div>
-                            <h2>Lunch packs</h2>
-                        </div>
-                        <div>
-                            <h2>Desserts</h2>
-                             <div class="gallery">
-                        <a target="_blank" >
-                            <img src="images/food26.jpg" alt="food26">
+                    <div class="gallery">
+                        <a target="_blank">
+                            <img src="images/food62.jpg" class="myImg" alt="food27">
                         </a>
                         <div class="description"></div>
                     </div>
-                     <div class="gallery">
-                        <a target="_blank" >
-                            <img src="images/food27.jpg" alt="food27">
+                    <div class="gallery">
+                        <a target="_blank">
+                            <img src="images/food19.jpg" class="myImg" alt="food32">
                         </a>
                         <div class="description"></div>
                     </div>
-                     <div class="gallery">
-                        <a target="_blank" >
-                            <img src="images/food32.jpg" alt="food32">
+                </div>
+                <div><br><br><br>
+
+                    <h2 class="color">Desserts</h2>
+                    <div class="gallery">
+                        <a target="_blank">
+                            <img src="images/food26.jpg" class="myImg" alt="food26">
                         </a>
                         <div class="description"></div>
                     </div>
-                        </div>
+                    <div class="gallery">
+                        <a target="_blank">
+                            <img src="images/food27.jpg" class="myImg" alt="food27">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank">
+                            <img src="images/food32.jpg" class="myImg" alt="food32">
+                        </a>
+                        <div class="description"></div>
+                    </div>
+                </div><br><br><br>
 
 
-                        <p class="nice">ENJOY OUR TASTY AND DELICIOUS DISHES AT YOUR CONVENIENCE</p>
+
+
+                <p class="nice">ENJOY OUR TASTY AND DELICIOUS DISHES AT YOUR CONVENIENCE</p>
 
     </main>
 

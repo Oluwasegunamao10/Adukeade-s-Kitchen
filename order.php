@@ -3,16 +3,7 @@ if (isset($_GET['orderVal'])) {
     $orderVl = (INT) $_GET['orderVal'];
 }
 ?>
-<?php
-// Check if itemNames is set in the URL parameters
-if (isset($_GET['itemNames'])) {
-    // Retrieve the itemNames from the URL parameters
-    $itemNames = $_GET['itemNames'];
-    echo "Item Names: " . $itemNames; // Debug output
-} else {
-    echo "Item Names not found in URL parameters"; // Debug output
-}
-?>
+
 
 <!DOCTYPE html>
 <html lang=”en”>
@@ -49,7 +40,7 @@ if (isset($_GET['itemNames'])) {
             <form action="./process_order.php" method="POST">
                 <p>
                     You are about to pay:
-                    <?php echo $orderVl; ?>
+                    $<?php echo $orderVl; ?>
                 </p>
 
                 <div class="row">
@@ -58,13 +49,6 @@ if (isset($_GET['itemNames'])) {
 
 
                         <h3 class="title">billing address</h3>
-                        <div>
-                            <span>Meal Ordered: </span>
-                            <input name="meal_ordered" type="text" value="   <?php
-                            // Display item names 
-                            echo "$itemNames";
-                            ?>" readonly required>
-                        </div>
 
 
 
@@ -137,9 +121,7 @@ if (isset($_GET['itemNames'])) {
                     </div>
 
                 </div>
-                <p>Order Amount:</p>
                 <div class="center1">
-                    <input type="text" value="  $<?php echo $orderVl; ?>" readonly>
 
                 </div>
                 <input type="submit" value="Pay $<?php echo $orderVl; ?>" class="submit-btn">

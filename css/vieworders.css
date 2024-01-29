@@ -11,9 +11,11 @@
 }
 
 .order-item {
-  padding: 20px;
   border-bottom: 1px solid #ddd;
+  margin: 20px auto; /* Center the item horizontally */
+  width: 80%; /* Set the width of the item */
 }
+
 
 .order-item:last-child {
   border-bottom: none;

@@ -64,19 +64,12 @@
 
                         <div class="food-item featured">
                            <div class="food-img">
-                              <img src="images/food23.jpg" alt="food image">
+                              <img src="images/food48.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Banana Bread With Butter & Milk</h2>
+                              <h2 class="food-name">Vegetable salad</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$25.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -86,19 +79,12 @@
                         <!-- item -->
                         <div class="food-item today-special">
                            <div class="food-img">
-                              <img src="foods/barbecue.jpg" alt="food image">
+                              <img src="images/food56.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Barbecue</h2>
+                              <h2 class="food-name">White soup/Ofe nsala</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$20.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -108,19 +94,12 @@
                         <!-- item -->
                         <div class="food-item new-arrival">
                            <div class="food-img">
-                              <img src="foods/barbecued-roasted-duck-ramen.jpg" alt="food image">
+                              <img src="images/food27.jpg"alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Barbecued Roasted Duck Ramen</h2>
+                              <h2 class="food-name">Smoothies</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$35.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -130,19 +109,12 @@
                         <!-- item -->
                         <div class="food-item featured">
                            <div class="food-img">
-                              <img src="foods/bread-with-seeds-and-butter.jpg" alt="food image">
+                              <img src="images/food.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Bread With Seeds & Butter</h2>
+                              <h2 class="food-name">Jollof rice with seafood fried rice and beef in sauce</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$27.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -152,64 +124,29 @@
                         <!-- item -->
                         <div class="food-item today-special">
                            <div class="food-img">
-                              <img src="foods/breakfast-sandwich-with-hummus-spread-and-fresh-vegetables.jpg"
+                              <img src="images/food10.jpg"
                                  alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Breadfast Sandwich</h2>
+                              <h2 class="food-name">Okra soup</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$15.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
                         </div>
                         <!-- end of item -->
 
-                        <!-- item -->
-                        <div class="food-item new-arrival">
-                           <div class="food-img">
-                              <img src="foods/brunch-skillet-with-eggs-and-tomatoes.jpg" alt="food image">
-                           </div>
-                           <div class="food-content">
-                              <h2 class="food-name">Brunch Skillet</h2>
-                              <div class="line"></div>
-                              <h3 class="food-price">$10.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
-                              <p class="category">Categories: <span>New Arrivals</span></p>
-                           </div>
-                           <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
-                        </div>
-                        <!-- end of item -->
 
                         <!-- item -->
                         <div class="food-item featured">
                            <div class="food-img">
-                              <img src="foods/chicken-breast-steaks-with-beetroot.jpg" alt="food image">
+                              <img src="images/food57.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Chicken Breast Steaks</h2>
+                              <h2 class="food-name">Seafood okra</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$15.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -219,19 +156,12 @@
                         <!-- item -->
                         <div class="food-item today-special">
                            <div class="food-img">
-                              <img src="foods/chicken-legs-with-tomatoes-peppers-and-oranges.jpg" alt="food image">
+                              <img src="images/food54.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Chicken Legs</h2>
+                              <h2 class="food-name">Oha soup</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$29.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -241,19 +171,12 @@
                         <!-- item -->
                         <div class="food-item new-arrival">
                            <div class="food-img">
-                              <img src="foods/eggplant-cannelloni.jpg" alt="food image">
+                              <img src="images/food21.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Eggplant Cannelloni</h2>
+                              <h2 class="food-name">Fruit salad</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$35.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -263,19 +186,12 @@
                         <!-- item -->
                         <div class="food-item featured">
                            <div class="food-img">
-                              <img src="foods/french-fries-with-steak-and-beer.jpg" alt="food image">
+                              <img src="images/food18.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">French Fries</h2>
+                              <h2 class="food-name">Akara and Pap</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$9.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -285,19 +201,12 @@
                         <!-- item -->
                         <div class="food-item today-special">
                            <div class="food-img">
-                              <img src="foods/fried-rice-with-shrimps.jpg" alt="food image">
+                              <img src="images/food44.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Fried Rice</h2>
+                              <h2 class="food-name">Catfish peppersoup</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$5.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -307,19 +216,12 @@
                         <!-- item -->
                         <div class="food-item new-arrival">
                            <div class="food-img">
-                              <img src="foods/king-prawns-with-green-lettuce.jpg" alt="food image">
+                              <img src="images/food41.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">King Prawns</h2>
+                              <h2 class="food-name">Peppered snail</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$11.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -329,19 +231,12 @@
                         <!-- item -->
                         <div class="food-item featured">
                            <div class="food-img">
-                              <img src="foods/noodles-with-egg-and-vegetables.jpg" alt="food image">
+                              <img src="images/food15.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Noodles</h2>
+                              <h2 class="food-name">Village Rice</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$5.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -351,19 +246,12 @@
                         <!-- item -->
                         <div class="food-item today-special">
                            <div class="food-img">
-                              <img src="foods/pizza-with-a-lot-of-cheese.jpg" alt="food image">
+                              <img src="images/food5.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Cheese Pizza</h2>
+                              <h2 class="food-name">Egusi soup</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$12.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -373,19 +261,12 @@
                         <!-- item -->
                         <div class="food-item new-arrival">
                            <div class="food-img">
-                              <img src="foods/summer-juicy-beef-burger.jpg" alt="food image">
+                              <img src="images/food46.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Juicy beef burger</h2>
+                              <h2 class="food-name">Efo riro</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$14.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -395,19 +276,12 @@
                         <!-- item -->
                         <div class="food-item featured">
                            <div class="food-img">
-                              <img src="foods/tacos-with-pulled-pork-fresh-vegetables-and-cream.jpg" alt="food image">
+                              <img src="images/food42.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">Tacos with pulled pork</h2>
+                              <h2 class="food-name">Fish and ponmo sauce</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$22.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Featured</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -417,19 +291,12 @@
                         <!-- item -->
                         <div class="food-item today-special">
                            <div class="food-img">
-                              <img src="foods/tiny-pickles-on-top-of-burger.jpg" alt="food image">
+                              <img src="images/food7.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">tiny pickles</h2>
+                              <h2 class="food-name">Ofada sauce</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$7.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Today's Special</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>
@@ -439,19 +306,12 @@
                         <!-- item -->
                         <div class="food-item new-arrival">
                            <div class="food-img">
-                              <img src="foods/tortilla-chips-with-salsa.jpg" alt="food image">
+                              <img src="images/food60.jpg" alt="food image">
                            </div>
                            <div class="food-content">
-                              <h2 class="food-name">tortilla chips</h2>
+                              <h2 class="food-name">Beans and Corn</h2>
                               <div class="line"></div>
                               <h3 class="food-price">$26.00</h3>
-                              <!-- <ul class="rating">
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="fas fa-star"></i></li>
-                                 <li><i class="far fa-star"></i></li>
-                              </ul> -->
                               <p class="category">Categories: <span>Coming soon</span></p>
                            </div>
                            <div> <button type="button" class="menu-btn1" id="">Add to cart</button></div>

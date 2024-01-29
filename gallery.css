@@ -16,5 +16,30 @@
 }
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 350px;
+}
+.myImg {
+  float: right;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  animation: 1s animate ease-in-out;
+}
+.color{
+    color: #ffdf00;
+}
+
+/* .myImg:hover {
+    transform: scale(1.1); 
+} */
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

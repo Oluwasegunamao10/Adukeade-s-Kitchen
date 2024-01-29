@@ -42,44 +42,29 @@ $allOrders = $order->getAllOrders();
         <h1 class="yeah">Restaurant Orders</h1>
         <div class="order-list">
             <div class="order-item">
-                <?php foreach ($allOrders as $key => $order) {
-                    $no = $key + 1;
-                    ?>
-                    <h2>Order
-                        <?= $no ?>
-                    </h2>
-                    <?php
-                    $fullName = htmlentities($order['fullname'], ENT_QUOTES, "UTF-8");
-                    ?>
-                    <div><span class="fatSpan">Full Name:</span> <span>
-                            <?= $fullName ?>
-                        </span></div>
-                    <?php
-                    $mealOrdered = htmlentities($order['meal_ordered'], ENT_QUOTES, "UTF-8");
-                    ?>
-                    <div><span class="fatSpan">Meal Ordered:</span> <span>
-                            <?= $mealOrdered ?>
-                        </span></div>
-                    <?php
-                    $address = htmlentities($order['cus_address'], ENT_QUOTES, "UTF-8");
-                    ?>
-                    <div><span class="fatSpan">Address:</span> <span>
-                            <?= $address ?>
-                        </span></div>
-                    <?php
-                    $email = htmlentities($order['email'], ENT_QUOTES, "UTF-8");
-                    ?>
-                    <div><span class="fatSpan">Email:</span> <span>
-                            <?= $email ?>
-                        </span></div>
-                    <?php
-                    $orderDt = htmlentities($order['order_date'], ENT_QUOTES, "UTF-8");
-                    ?>
-                    <div><span class="fatSpan">Date:</span> <span>
-                            <?= $orderDt ?>
-                        </span></div>
-                    <?php
-                } ?>
+                <table>
+    <thead>
+        <tr>
+            <th>Order Number</th>
+            <th>Meal Ordered</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($allOrders as $key => $order) : ?>
+            <tr>
+                <td><?= $key + 1 ?></td>
+                <td><?= htmlentities($order['meal_ordered'], ENT_QUOTES, "UTF-8") ?></td>
+                <td><?= htmlentities($order['cus_address'], ENT_QUOTES, "UTF-8") ?></td>
+                <td><?= htmlentities($order['email'], ENT_QUOTES, "UTF-8") ?></td>
+                <td><?= htmlentities($order['order_date'], ENT_QUOTES, "UTF-8") ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+
             </div>
 
 

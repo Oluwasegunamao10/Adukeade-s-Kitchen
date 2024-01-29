@@ -1,19 +1,19 @@
 .good {
   margin: 0;
   padding: 0;
-  /* background-color: #138809; */
   background: linear-gradient(45deg, #43e434, #18920d, #0a4e03);
   font-size: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Titillium Web, sans-serif;
+  /* font-family: Titillium Web, sans-serif; */
   font-family: Shantell Sans, cursive;
 }
 header {
   position: sticky;
   top: 0;
+  z-index: 1000; /* Adjust the value as needed */
 }
 .boo {
   top: 0;
@@ -47,6 +47,7 @@ header {
   height: 50px;
   margin: 2px;
 }
+
 main {
   flex: 1;
   padding-top: 40px;
@@ -115,17 +116,18 @@ td {
 .content p {
   font-size: 1.875em;
   color: #ffdf00;
-  font-family: Lobster, cursive;
+ font-family: Shantell Sans, cursive;
 }
-
 .myImg {
+  border-radius: 5px solid black; /* Fix the border-radius property */
   float: right;
   bottom: 0;
   right: 0;
   width: 300px;
-  animation: 1s animate ease-in-out;
+  animation: animate 1s ease-in-out; /* Define the animation */
 }
-/* @keyframes animate {
+
+@keyframes animate {
   0% {
     opacity: 0;
     transform: scale(0.5);
@@ -134,12 +136,14 @@ td {
     opacity: 1;
     transform: scale(1);
   }
-} */
-button {
+}
+
+.btn1 {
   margin-top: 20px;
-  background: #dfa167;
+  background: #d67229;
   border: none;
   outline: none;
+  box-shadow: inset -2px -2px 5px black;
   letter-spacing: 0.04em;
   font-size: 20px;
   padding: 15px 20px;
@@ -156,7 +160,7 @@ button {
 }
 
 .f {
-  font-family: Shantell Sans, cursive;
+        font-family: Shantell Sans, cursive;
 }
 .see {
   float: right;
@@ -216,6 +220,9 @@ button {
 .d-block {
   width: 200px;
   height: 300px;
+}
+.nice{
+   color: #ffdf00;
 }
 .center {
   display: flex;

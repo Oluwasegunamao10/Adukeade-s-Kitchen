@@ -35,6 +35,8 @@
       </div><br>
 
       <button id="btn2" type="submit">Log in</button>
+
+      <p>Don't have an account? Register<a class="nav-link none" href="signup.php"> here</a></p>
     </form>
   </div>
   <script src="login.js"></script>
